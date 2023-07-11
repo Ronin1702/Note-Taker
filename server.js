@@ -16,7 +16,7 @@ app.get('/notes', (req, res) =>
 );
 
 //send database json to /notes if it exist, if not return a 404 message
-app.get('/notes', (req, res) => {
+app.get('/api/notes', (req, res) => {
     //read db.json
     fs.readFile('db/db.json', 'utf-8', (error, data) => {
         // error returns a 404 message
@@ -27,7 +27,7 @@ app.get('/notes', (req, res) => {
 });
 
 //post notes and saves to db.json
-app.post('/notes', (req, res) => {
+app.post('/api/notes', (req, res) => {
     const { title, text } = req.body;
 
     fs.readFile('db/db.json', 'utf-8', (error, data) => {
@@ -47,7 +47,7 @@ app.post('/notes', (req, res) => {
 });
 
 //delete notes from db.json based on a given id
-app.delete('/notes/:id', (req, res) => {
+app.delete('/api/notes/:id', (req, res) => {
     const noteId = req.params.id;
     fs.readFile('db/db.json', 'utf-8', (error, data) => {
         const db = JSON.parse(data);
