@@ -1,1 +1,0 @@
-//Assuming I need to write a generateNotes and renderNotes functions

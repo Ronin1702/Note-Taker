@@ -1,13 +1,8 @@
-// Import Express.js
+const { randomUUID } = require('crypto');
 const express = require('express');
-
-// Import built-in Node.js package 'path' to resolve path of files that are located on the server
+const fs = require('fs');
 const path = require('path');
-
-// Initialize an instance of Express.js
 const app = express();
-
-// Specify on which port the Express.js server will run
 const PORT = process.env.PORT || 3000;
 
 // Static middleware pointing to the public folder
@@ -19,6 +14,57 @@ app.get('/', (req, res) => res.send('public/index.html'));
 app.get('/notes', (req, res) =>
     res.sendFile(path.join(__dirname, 'public/notes.html'))
 );
+
+//send database json to /notes if it exist, if not return a 404 message
+app.get('/notes', (req, res) => {
+    //read db.json
+    fs.readFile('db/db.json', 'utf-8', (error, data) => {
+        // error returns a 404 message
+        if (error) return res.status(400).json({ error: 'Bad Request' });
+        // else return data to the notes
+        res.json(JSON.parse(data));
+    });
+});
+
+//post notes and saves to db.json
+app.post('/notes', (req, res) => {
+    const { title, text } = req.body;
+
+    fs.readFile('db/db.json', 'utf-8', (error, data) => {
+        const db = JSON.parse(data)
+        const postData = { id: randomUUID, title: title, text: text }
+
+        db.push(postData);
+
+        const newData = JSON.stringify(db);
+
+        if (error) return res.status(404).json({ error: 'file not found' });
+        fs.writeFile('data/db.json', newData, (error) => {
+            if (error) throw error;
+            res.status(200).json({ success: 'Note Saved!' });
+        });
+    });
+});
+
+//delete notes from db.json based on a given id
+app.delete('/notes/:id', (req, res) => {
+    const noteId = req.params.id;
+    fs.readFile('db/db.json', 'utf-8', (error, data) => {
+        const db = JSON.parse(data),
+        const dbIndex = db.findIndex(Object => Object.id === noteId);
+        //if there no such an ID
+        if (dbIndex === -1) {
+            res.status(404).send('Note Not Found based on given ID.');
+            return;
+        }
+        db.splice(dbIndex, 1);
+        if (error) return res.status(400).json({ error: 'Bad Request' });
+        fs.writeFile('db/db.json', JSON.stringify(db), error => {
+            if (error) return res.status(400)({ error: 'Bad Request' });
+            res.status(200).json({ success: 'Note Deleted!' });
+        });
+    });
+});
 
 // listen() method is responsible for listening for incoming connections on the specified port 
 app.listen(PORT, () =>
