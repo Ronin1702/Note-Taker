@@ -1,7 +1,7 @@
 # Note Taker [![GPLv3](https://img.shields.io/static/v1.svg?label=📃%20License&message=GPL%20v3.0&color=important)](./LICENSE)
 
-* This is an application called ***Note Taker*** that can be used to write and save notes.
-* This application will use an *Express.js* back end and will save and retrieve note data from a *JSON* file.
+* This is an application called [***Note Taker***](https://https://github.com/Ronin1702/Note-Taker) that can be used to write and save notes.
+* This application will use an [*Express.js*](https://expressjs.com/) back end and will save and retrieve note data from a *JSON* file.
 * This application is also deployed to [*Heroku*](https://www.heorku.com).
 
 ## Table of Contents
@@ -81,6 +81,8 @@ THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 ```
+
+[*back to top*](#table-of-contents)
 
 ## Tests
 
