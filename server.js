@@ -13,13 +13,12 @@ const PORT = process.env.PORT || 3000;
 // Static middleware pointing to the public folder
 app.use(express.static('public'));
 
-// Create Express.js routes for default '/', '/send' and '/routes' endpoints
+// Create Express.js routes for default '/', '/notes' and '/api' endpoints
 app.get('/', (req, res) => res.send('public/index.html'));
 
 app.get('/notes', (req, res) =>
     res.sendFile(path.join(__dirname, 'public/notes.html'))
 );
-
 
 // listen() method is responsible for listening for incoming connections on the specified port 
 app.listen(PORT, () =>
