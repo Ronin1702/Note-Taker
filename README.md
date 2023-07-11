@@ -104,7 +104,7 @@ npx jest
 
 ## Links
 
-[![Tweet about this](https://img.shields.io/static/v1.svg?label=Tweet%20about%20this&message=🎵&color=blue&logo=twitter&style=social)](https://rb.gy/kh9be)
+[![Tweet about this](https://img.shields.io/static/v1.svg?label=Tweet%20about%20this&message=🎵&color=blue&logo=twitter&style=social)](https://rb.gy/zsevz)
 
 * GitHub Repo: [Note-Taker](https://github.com/Ronin1702/Note-Taker)
 <!-- * ![Screenshot1](./examples/) -->
