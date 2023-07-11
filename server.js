@@ -50,7 +50,7 @@ app.post('/notes', (req, res) => {
 app.delete('/notes/:id', (req, res) => {
     const noteId = req.params.id;
     fs.readFile('db/db.json', 'utf-8', (error, data) => {
-        const db = JSON.parse(data),
+        const db = JSON.parse(data);
         const dbIndex = db.findIndex(Object => Object.id === noteId);
         //if there no such an ID
         if (dbIndex === -1) {
