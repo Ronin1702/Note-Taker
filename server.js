@@ -10,9 +10,6 @@ const app = express();
 // Specify on which port the Express.js server will run
 const PORT = process.env.PORT || 3000;
 
-const api = require('./db/db.json')
-const notes = require('./');
-
 // Static middleware pointing to the public folder
 app.use(express.static('public'));
 
@@ -28,5 +25,5 @@ app.get('/notes', (req, res) =>
 app.listen(PORT, () =>
 
     // log a message to the terminal with the connected server location
-    console.log(`App is on Server: http://localhost:${PORT}`)
+    console.log(`This app is now running on: http://localhost:${PORT}`)
 );
