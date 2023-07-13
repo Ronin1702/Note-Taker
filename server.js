@@ -42,7 +42,7 @@ app.get('/api/notes', (req, res) => {
 app.post('/api/notes', (req, res) => {
     const { title, text } = req.body;
 
-    fs.readFile('db/db.json', 'utf-8', (err, data) => {     
+    fs.readFile('db/db.json', 'utf-8', (err, data) => {
         if (err) return res.status(400).json({ error: 'No Notes Saved in Database' });
         const notes = JSON.parse(data)
         const newNote = { id: uuid.v4(), title: title, text: text }
