@@ -104,15 +104,24 @@ http://localhost:3000
 
 ## Screenshots
 
-* Main Page
+### Main Page
+
 ![Main](./examples/nt3000-main.png)
-* Note List View
+
+### Note List View
+
 ![Note List View](./examples/nt3000-noteListView.png)
-* Note Edit
+
+### Note Edit
+
 ![Note Edit](./examples/nt3000-noteEdit.png)
-* Note Save
+
+### Note Save
+
 ![Note Save](./examples/nt300-noteSave.png)
-* Note Delete
+
+### Note Delete
+
 ![Note Delete](./examples/nt3000-noteDelete.png)
 
 [*back to top*](#table-of-contents)
