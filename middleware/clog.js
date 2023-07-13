@@ -15,10 +15,6 @@ const clog = (req, res, next) => {
         console.info(`📕 ${fgCyan}${req.method} request to ${req.path}`);
         break;
       }
-      case 'USE': {
-        console.info(`📒 ${fgCyan}${req.method} request to ${req.path}`);
-        break;
-      }
       default:
         console.log(`📙${fgCyan}${req.method} request to ${req.path}`);
     }
@@ -28,4 +24,3 @@ const clog = (req, res, next) => {
 };
 
 exports.clog = clog;
-
