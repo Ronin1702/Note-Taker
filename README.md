@@ -141,4 +141,4 @@ http://localhost:3000
 
 [*back to top*](#table-of-contents)
 - - -
-![Copyright](https://img.shields.io/static/v1.svg?label=Note%20Taker%20©️%20&message=%202023%20Kai%20Chen&labelColor=informational&color=033450)
+[![Copyright](https://img.shields.io/static/v1.svg?label=Note%20Taker%20©️%20&message=%202023%20Kai%20Chen&labelColor=informational&color=033450)](https://kaichen.biz)
