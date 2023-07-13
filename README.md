@@ -1,8 +1,8 @@
-# Note Taker [![GPLv3](https://img.shields.io/static/v1.svg?label=📃%20License&message=GPL%20v3.0&color=important)](./LICENSE)
+# Note Taker 3000 [![GPLv3](https://img.shields.io/static/v1.svg?label=📃%20License&message=GPL%20v3.0&color=important)](./LICENSE)
 
-* This is an application called [***Note Taker***](https://note-taker-v3000-27717ed21972.herokuapp.com/) that can be used to write and save notes.
+* This is an application called [***Note Taker 3000***](https://note-taker-v3000-27717ed21972.herokuapp.com/) that can be used to write and save notes.
 * This application will use an [*Express.js*](https://expressjs.com/) back end and will save and retrieve note data from a *JSON* file.
-* This application is also deployed to [*Heroku*](https://www.heroku.com) as [Note-Taker-v3000](https://note-taker-v3000-27717ed21972.herokuapp.com/)
+* This application is also deployed to [*Heroku*](https://www.heroku.com) as ***[Note-Taker-v3000](https://note-taker-v3000-27717ed21972.herokuapp.com/)***
 
 ## Table of Contents
 
@@ -51,7 +51,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 >npm install express@4.18.2 uuid@9.0.0
 >```
 >
-> **Important**: To guarantee this web app runs with the current package.json, please make sure to **@** the **EXACT** versions as indicated above.
+> **Important**: To guarantee this web app runs with the current `package.json`, please make sure to `@` the **EXACT** versions as indicated above.
 
 [*back to top*](#table-of-contents)
 
@@ -67,7 +67,7 @@ npm start
 
 ```md
 GIVEN a note-taking application
-WHEN I open the Note Taker
+WHEN I open the Note Taker 3000
 THEN I am presented with a landing page with a link to a notes page
 WHEN I click on the link to the notes page
 THEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column
