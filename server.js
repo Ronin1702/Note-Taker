@@ -7,6 +7,10 @@ const htmlRoutes = require('./routes/htmlRoutes');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+//Middleware clog.js
+const { clog } = require('./middleware/clog');
+app.use(clog)
+
 // Middleware for parsing application/json and urlencoded data
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
