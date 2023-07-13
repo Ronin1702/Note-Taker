@@ -1,18 +1,17 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "This is an application called Note Taker that can be used to write and save notes.This application will use an Express.js back end and will save and retrieve note data from a JSON file.This application is also deployed to Heroku.",
+  "description": "* This is an application called [***Note Taker***](https://note-taker-v3000-27717ed21972.herokuapp.com/) that can be used to write and save notes. * This application will use an [*Express.js*](https://expressjs.com/) back end and will save and retrieve note data from a *JSON* file. * This application is also deployed to [*Heroku*](https://www.heorku.com) as [Note-Taker-v3000](https://note-taker-v3000-27717ed21972.herokuapp.com/)",
   "main": "server.js",
   "directories": {
-    "example": "examples",
-    "lib": "lib",
-    "test": "test"
+    "example": "examples"
   },
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
-  "author": "Kai Chen",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
