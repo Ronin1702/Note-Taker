@@ -2,7 +2,7 @@
 
 * This is an application called [***Note Taker***](https://note-taker-v3000-27717ed21972.herokuapp.com/) that can be used to write and save notes.
 * This application will use an [*Express.js*](https://expressjs.com/) back end and will save and retrieve note data from a *JSON* file.
-* This application is also deployed to [*Heroku*](https://www.heorku.com) as [Note-Taker-v3000](https://note-taker-v3000-27717ed21972.herokuapp.com/)
+* This application is also deployed to [*Heroku*](https://www.heroku.com) as [Note-Taker-v3000](https://note-taker-v3000-27717ed21972.herokuapp.com/)
 
 ## Table of Contents
 
