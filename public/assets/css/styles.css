@@ -29,7 +29,7 @@ body {
   height: calc(100% - 63px);
   padding-top: 15px;
   font-family: 'Chathura', sans-serif;
-  font-size:30px
+  font-size: 30px
 }
 
 .note-title {
@@ -42,6 +42,7 @@ body {
 .note-title:read-only,
 .note-textarea:read-only {
   color: #757575;
+  cursor: not-allowed;
 }
 
 .list-container .card {
@@ -69,10 +70,25 @@ body {
   font-family: 'Russo One', sans-serif;
 }
 
+/* Hover over list-group-item and highlight the item with blue gradient background, text turns white*/
+.list-group-item:hover {
+  background: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0)), #0d6efd;
+  opacity: 90%;
+  color: white;
+}
+
 .list-container i {
   font-size: 1.1rem;
   cursor: pointer;
 }
+
+/* hover over DELETE icon and it shall enlarge and shake */
+.list-container i:hover {
+  animation: shake 1.0s;
+  animation-iteration-count: infinite;
+  font-size: 1.5rem;
+}
+
 
 .list-container .list-group-item {
   border-left: none;
@@ -81,8 +97,8 @@ body {
   cursor: pointer;
 }
 
-/* Google Fonts Below */
-/* 
+/* Google Fonts:
+
 font-family: 'Chathura', sans-serif;
 font-family: 'Nabla', cursive;
 font-family: 'Press Start 2P', cursive;
@@ -90,17 +106,71 @@ font-family: 'Russo One', sans-serif;
 font-family: 'VT323', monospace;
 */
 
-.navbar-brand{
+.navbar-brand {
   font-family: 'Nabla', cursive;
 }
 
-h1{
+h1 {
   font-family: 'Russo One', sans-serif;
 }
+
 h4 {
   font-family: 'Chathura', sans-serif;
-  font-size:45px
+  font-size: 45px
 }
-.btn{
+
+.btn {
   font-family: 'Press Start 2P', cursive;
+}
+/* Get Started btn hover effect */
+.btn:hover {
+  animation: shake 1.0s;
+  animation-iteration-count: infinite;
+}
+
+/* add a shaking effect */
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
