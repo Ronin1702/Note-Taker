@@ -1,12 +1,7 @@
 [
   {
-    "id": "1",
-    "title": "Test Title",
-    "text": "Test text"
-  },
-  {
-    "id": "954dd5e9-91dc-4c68-9651-e591bb39043d",
-    "title": "Introduction",
-    "text": "This is a test"
+    "id": "5a3a4942-da66-4340-a053-dcf80ad9433a",
+    "title": "Usage",
+    "text": "GIVEN a note-taking application\nWHEN I open the Note Taker\nTHEN I am presented with a landing page with a link to a notes page\nWHEN I click on the link to the notes page\nTHEN I am presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note’s text in the right-hand column\nWHEN I enter a new note title and the note’s text\nTHEN a Save icon appears in the navigation at the top of the page\nWHEN I click on the Save icon\nTHEN the new note I have entered is saved and appears in the left-hand column with the other existing notes\nWHEN I click on an existing note in the list in the left-hand column\nTHEN that note appears in the right-hand column\nWHEN I click on the Write icon in the navigation at the top of the page\nTHEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column\nWHEN I click on the Delete icon in the left-hand column\nTHEN the note where the Delete icon is next to will be deleted"
   }
 ]
