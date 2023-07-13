@@ -84,5 +84,23 @@ body {
 /* Google Fonts Below */
 /* 
 font-family: 'Chathura', sans-serif;
+font-family: 'Nabla', cursive;
+font-family: 'Press Start 2P', cursive;
 font-family: 'Russo One', sans-serif;
+font-family: 'VT323', monospace;
 */
+
+.navbar-brand{
+  font-family: 'Nabla', cursive;
+}
+
+h1{
+  font-family: 'Russo One', sans-serif;
+}
+h4 {
+  font-family: 'Chathura', sans-serif;
+  font-size:45px
+}
+.btn{
+  font-family: 'Press Start 2P', cursive;
+}
