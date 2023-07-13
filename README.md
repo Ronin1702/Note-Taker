@@ -119,7 +119,7 @@ http://localhost:3000
 
 ### Note Save
 
-![Note Save](./examples/nt300-noteSave.png)
+![Note Save](./examples/nt3000-noteSave.png)
 
 ### Note Delete
 
