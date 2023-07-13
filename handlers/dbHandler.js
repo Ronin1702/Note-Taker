@@ -17,10 +17,23 @@ module.exports = {
         //deconstruct db.json
         const { title, text } = req.body;
 
+        //inquire the agent used to access this web app
+        const useragent = require('useragent');
+        //parse the data using useragent
+        let agent = useragent.parse(req.headers['user-agent']);
+
         fs.readFile('db/db.json', 'utf-8', (err, data) => {
             if (err) return res.status(400).json({ error: 'No Notes Saved in Database' });
             const notes = JSON.parse(data)
-            const newNote = { id: uuid.v4(), title: title, text: text }
+            const newNote = {
+                id: uuid.v4(),
+                title: title,
+                text: text,
+                date: new Date().toISOString(),
+                ip: req.ip,
+                browser: agent.toAgent(),
+                os: agent.os.toString()
+            }
 
             notes.push(newNote);
 
@@ -31,10 +44,10 @@ module.exports = {
         });
     },
     deleteNote: function (req, res) {
-        
+
         //define note IDs
         const noteId = req.params.id;
-        
+
         fs.readFile('db/db.json', 'utf-8', (err, data) => {
             let notes = JSON.parse(data);
             let noteIndex = notes.findIndex(Object => Object.id === noteId);

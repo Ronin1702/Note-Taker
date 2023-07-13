@@ -32,6 +32,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 * [![npm](https://img.shields.io/badge/npm-v9.8.0-blue?logo=npm)](https://docs.npmjs.com/cli/v9/)
   * [![Express Package](https://img.shields.io/badge/Express-4.18.2-green?logo=express)](https://expressjs.com/)
+  * [![User Agent Package](https://img.shields.io/badge/UserAgent-2.3.0-green?logo=npm)](https://www.npmjs.com/package/useragent)
   * [![UUID Package](https://img.shields.io/badge/UUID-9.0.0-green?logo=npm)](https://www.npmjs.com/package/uuid)
 
 [*back to top*](#table-of-contents)
@@ -49,7 +50,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 >then
 >
 >```bash
->npm install express@4.18.2 uuid@9.0.0
+>npm install express@4.18.2 useragent@2.3.0 uuid@9.0.0
 >```
 >
 > **Important**: To guarantee this web app runs with the current `package.json`, please make sure to `@` the **EXACT** versions as indicated above.
