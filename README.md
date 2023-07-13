@@ -123,8 +123,7 @@ http://localhost:3000
 
 * GitHub Repo: [Note-Taker](https://github.com/Ronin1702/Note-Taker)
 * Heroku Deployment: [Note-Taker-v3000](https://note-taker-v3000-27717ed21972.herokuapp.com/)
-<!-- * ![Screenshot1](./examples/) -->
-<!-- * ![Screenshot2](./examples/) -->
+
 [*back to top*](#table-of-contents)
 
 ## License
