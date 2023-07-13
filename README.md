@@ -28,7 +28,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 * [![Heroku CLI](https://img.shields.io/badge/Heroku-v8.1.9-informational?logo=heroku)](https://devcenter.heroku.com/articles/heroku-cli)
 * [![Node.js](https://img.shields.io/badge/Node.js®-v20.4.0-blue?logo=node.js)](https://nodejs.org/en)
 
-* [![npm](https://img.shields.io/badge/npm-v9.7.2-blue?logo=npm)](https://docs.npmjs.com/cli/v9/)
+* [![npm](https://img.shields.io/badge/npm-v9.8.0-blue?logo=npm)](https://docs.npmjs.com/cli/v9/)
   * [![Express Package](https://img.shields.io/badge/Express-4.18.2-green?logo=express)](https://expressjs.com/)
   * [![UUID Package](https://img.shields.io/badge/UUID-9.0.0-green?logo=npm)](https://www.npmjs.com/package/uuid)
 
