@@ -28,12 +28,15 @@ body {
   resize: none;
   height: calc(100% - 63px);
   padding-top: 15px;
+  font-family: 'Chathura', sans-serif;
+  font-size:30px
 }
 
 .note-title {
   height: 50px;
   margin-top: 13px;
   font-size: 3rem;
+  font-family: 'Russo One', sans-serif;
 }
 
 .note-title:read-only,
@@ -76,3 +79,12 @@ body {
   padding: 20px;
   cursor: pointer;
 }
+
+/* Google Fonts Below */
+/* 
+font-family: 'Chathura', sans-serif;
+font-family: 'Nabla', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Russo One', sans-serif;
+font-family: 'VT323', monospace; 
+*/

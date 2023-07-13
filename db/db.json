@@ -27,15 +27,6 @@
     "os": "Mac OS X 10.15.7"
   },
   {
-    "id": "66ed6685-a3e0-41cf-a106-564c99b13269",
-    "title": "IP",
-    "text": "This Note Taker also records the IP you used to create a note.",
-    "date": "2023-07-13T09:11:46.930Z",
-    "ip": "::ffff:10.1.19.119",
-    "browser": "Chrome 114.0.0",
-    "os": "Mac OS X 10.15.7"
-  },
-  {
     "id": "acbc56c5-091c-4c6a-bd2b-f7d4b5338848",
     "title": "Date",
     "text": "This Note Taker also records the date and time when a note is created.",
