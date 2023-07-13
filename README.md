@@ -10,6 +10,7 @@
 * [Technology](#technology)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Screenshots](#screenshots)
 * [Links](#links)
 * [License](#license)
 
@@ -81,6 +82,21 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 WHEN I click on the DELETE icon in the left-hand column
 THEN the corespondent note inline with the DELETE icon will be erased.
 ```
+
+[*back to top*](#table-of-contents)
+
+## Screenshots
+
+* Main Page
+![Main](./examples/nt3000-main.png)
+* Note List View
+![Note List View](./examples/nt3000-noteListView.png)
+* Note Edit
+![Note Edit](./examples/nt3000-noteEdit.png)
+* Note Save
+![Note Save](./examples/nt300-noteSave.png)
+* Note Delete
+![Note Delete](./examples/nt3000-noteDelete.png)
 
 [*back to top*](#table-of-contents)
 
