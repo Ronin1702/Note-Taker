@@ -66,6 +66,7 @@ body {
 .list-item-title {
   display: inline-block;
   width: 75%;
+  font-family: 'Russo One', sans-serif;
 }
 
 .list-container i {
@@ -83,8 +84,5 @@ body {
 /* Google Fonts Below */
 /* 
 font-family: 'Chathura', sans-serif;
-font-family: 'Nabla', cursive;
-font-family: 'Press Start 2P', cursive;
 font-family: 'Russo One', sans-serif;
-font-family: 'VT323', monospace; 
 */
