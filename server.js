@@ -1,4 +1,8 @@
-const { randomUUID } = require('crypto');
+const uuid = () => {
+    return Math.floor((1 + Math.random()) * 0x10000)
+      .toString(16)
+      .substring(1);
+  };
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
@@ -15,7 +19,7 @@ app.get('/notes', (req, res) =>
     res.sendFile(path.join(__dirname, 'public/notes.html'))
 );
 
-//send database json to /notes if it exist, if not return a 404 message
+//send database json to /api/notes if it exist, if not return a 404 message
 app.get('/api/notes', (req, res) => {
     //read db.json
     fs.readFile('db/db.json', 'utf-8', (error, data) => {
@@ -32,7 +36,7 @@ app.post('/api/notes', (req, res) => {
 
     fs.readFile('db/db.json', 'utf-8', (error, data) => {
         const db = JSON.parse(data)
-        const postData = { id: randomUUID, title: title, text: text }
+        const postData = { id: uuid(), title: title, text: text }
 
         db.push(postData);
 
