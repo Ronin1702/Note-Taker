@@ -10,6 +10,7 @@
 * [Technology](#technology)
 * [Installation](#installation)
 * [Usage](#usage)
+* [Test](#test)
 * [Screenshots](#screenshots)
 * [Links](#links)
 * [License](#license)
@@ -81,6 +82,22 @@ WHEN I click on the PLUS-SIGN icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 WHEN I click on the DELETE icon in the left-hand column
 THEN the corespondent note inline with the DELETE icon will be erased.
+```
+
+[*back to top*](#table-of-contents)
+
+## Test
+
+While there is yet a test script written for this application, you can still **test** the functions of this application **locally** by running the command below:
+
+```bash
+npm start
+```
+
+then in your browser of choice, navigate to the *localhost URL* below:
+
+```md
+http://localhost:3000
 ```
 
 [*back to top*](#table-of-contents)
