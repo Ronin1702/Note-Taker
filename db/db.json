@@ -7,5 +7,50 @@
     "ip": "::1",
     "browser": "Chrome 114.0.0",
     "os": "Mac OS X 10.15.7"
+  },
+  {
+    "id": "90b261c4-5fae-4fc4-b660-f4280c61c283",
+    "title": "ID",
+    "text": "This Note Taker uses UUID v4 to generate a unique id in the backend.",
+    "date": "2023-07-13T09:07:43.476Z",
+    "ip": "::ffff:10.1.49.79",
+    "browser": "Chrome 114.0.0",
+    "os": "Mac OS X 10.15.7"
+  },
+  {
+    "id": "2bd25f1b-9dee-4e51-a86b-46d1b8b4fab7",
+    "title": "UserAgent Package",
+    "text": "This app also uses useragent package to inquire user's browser and operating system info.",
+    "date": "2023-07-13T09:09:37.810Z",
+    "ip": "::ffff:10.1.34.55",
+    "browser": "Chrome 114.0.0",
+    "os": "Mac OS X 10.15.7"
+  },
+  {
+    "id": "66ed6685-a3e0-41cf-a106-564c99b13269",
+    "title": "IP",
+    "text": "This Note Taker also records the IP you used to create a note.",
+    "date": "2023-07-13T09:11:46.930Z",
+    "ip": "::ffff:10.1.19.119",
+    "browser": "Chrome 114.0.0",
+    "os": "Mac OS X 10.15.7"
+  },
+  {
+    "id": "acbc56c5-091c-4c6a-bd2b-f7d4b5338848",
+    "title": "Date",
+    "text": "This Note Taker also records the date and time when a note is created.",
+    "date": "2023-07-13T09:12:09.242Z",
+    "ip": "::ffff:10.1.19.119",
+    "browser": "Chrome 114.0.0",
+    "os": "Mac OS X 10.15.7"
+  },
+  {
+    "id": "8746cce3-683c-48ca-9530-3fdcb095f341",
+    "title": "NOTE API",
+    "text": "To see the api for note stored in .json format, navigate to URL: https://note-taker-v3000-27717ed21972.herokuapp.com/api/notes",
+    "date": "2023-07-13T09:20:05.005Z",
+    "ip": "::ffff:10.1.47.122",
+    "browser": "Chrome 114.0.0",
+    "os": "Mac OS X 10.15.7"
   }
 ]
