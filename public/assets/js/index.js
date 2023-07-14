@@ -130,12 +130,19 @@ const renderNoteList = async (notes) => {
     const liEl = document.createElement('li');
     liEl.classList.add('list-group-item');
 
+    // Add the draggable attribute to the list item
+    liEl.setAttribute('draggable', true);
+
     const spanEl = document.createElement('span');
     spanEl.classList.add('list-item-title');
     spanEl.innerText = text;
     spanEl.addEventListener('click', handleNoteView);
 
     liEl.append(spanEl);
+
+    // Add event listeners for dragstart and dragover events
+    liEl.addEventListener('dragstart', handleDragStart);
+    liEl.addEventListener('dragover', handleDragOver);
 
     if (delBtn) {
       const delBtnEl = document.createElement('i');
@@ -153,6 +160,30 @@ const renderNoteList = async (notes) => {
 
     return liEl;
   };
+
+  let draggedItem = null;
+
+  //define the handleDragStart and handleDragOver functions:
+  const handleDragStart = (e) => {
+    draggedItem = e.target;
+    e.dataTransfer.setData('text/plain', '');
+  }
+
+  const handleDragOver = (e) => {
+    e.preventDefault();
+    const listContainer = document.querySelector('.list-group');
+    const target = e.target;
+    const bounding = target.getBoundingClientRect();
+    const offset = bounding.y + (bounding.height / 2);
+  
+    if (e.clientY - bounding.top < bounding.height / 2) {
+      // If cursor is on the upper half of the target, insert before the target
+      listContainer.insertBefore(draggedItem, target);
+    } else {
+      // If cursor is on the lower half of the target, insert after the target
+      listContainer.insertBefore(draggedItem, target.nextSibling);
+    }
+  }
 
   if (jsonNotes.length === 0) {
     noteListItems.push(createLi('No Saved Notes', false));
