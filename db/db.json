@@ -43,5 +43,23 @@
     "ip": "::ffff:10.1.47.122",
     "browser": "Chrome 114.0.0",
     "os": "Mac OS X 10.15.7"
+  },
+  {
+    "id": "4e3b7009-f094-4e49-ac6f-79cb58e73ec4",
+    "title": "DELETE IS SERVER WIDE",
+    "text": "When you click to delete a note, the note is then delete across the server. \nThat is because this is a server-side application.",
+    "date": "2023-07-14T06:36:07.936Z",
+    "ip": "::ffff:10.1.33.87",
+    "browser": "Chrome 114.0.0",
+    "os": "Windows 10.0.0"
+  },
+  {
+    "id": "364fac0a-d8c4-4168-ac77-0c02f7ec8783",
+    "title": "Drag and Drop",
+    "text": "Don't like how the Note List is arranged?\nTry click and drag a list group item.\nAnd drop it over another item, \nit switch the spot with that item.",
+    "date": "2023-07-14T06:39:26.873Z",
+    "ip": "::ffff:10.1.33.87",
+    "browser": "Chrome 114.0.0",
+    "os": "Windows 10.0.0"
   }
 ]
