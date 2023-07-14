@@ -1,6 +1,8 @@
 const express = require('express');
+
 //get apiRoutes module
 const apiRoutes = require('./routes/apiRoutes');
+
 //get htmlRoutes module
 const htmlRoutes = require('./routes/htmlRoutes');
 
