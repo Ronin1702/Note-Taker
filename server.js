@@ -4,6 +4,9 @@ const apiRoutes = require('./routes/apiRoutes');
 //get htmlRoutes module
 const htmlRoutes = require('./routes/htmlRoutes');
 
+// Import sequelize configuration:
+const sequelize = require('./config/connection');
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -22,4 +25,9 @@ app.use(express.static('public'));
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
-app.listen(PORT, () => console.log(`This app is now running on: http://localhost:${PORT}`));
+// app.listen(PORT, () => console.log(`This app is now running on: http://localhost:${PORT}`));
+
+// Synchronize your sequelize models and then start your server:
+sequelize.sync().then(() => {
+    app.listen(PORT, () => console.log(`This app is now running on: http://localhost:${PORT}`));
+});
